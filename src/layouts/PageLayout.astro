@@ -23,6 +23,10 @@ const { metadata } = Astro.props;
     <Header {...headerData} isSticky showRssFeed showToggleTheme />
   </slot>
   <main>
+    <motion-bg class="fixed inset-y-0 inset-x-0 bg-black pointer-events-none">
+      <video autoplay loop muted playsinline class="h-full w-full object-cover"
+        src="https://l4wlsi8vxy8hre4v.public.blob.vercel-storage.com/video/glass-animation-5-f0gPcjmKFIV3ot5MGOdNy2r4QHBoXt.mp4"></video>
+    </motion-bg>
     <slot />
   </main>
   <slot name="footer">
