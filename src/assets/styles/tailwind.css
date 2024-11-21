@@ -18,6 +18,20 @@
   .text-muted {
     color: var(--aw-color-text-muted);
   }
+  motion-bg:before {
+    background-image: url(~/assets/images/crt.gif);
+    background-repeat: repeat;
+    mix-blend-mode: multiply;
+    background-position: 50%;
+    background-size: 256px;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
 }
 
 @layer components {
