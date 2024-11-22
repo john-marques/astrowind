@@ -65,6 +65,12 @@ html:not(.dark) motion-bg > video {
   filter: contrast(.1) brightness(2.0);
 }
 
+@media (max-width: 767px) {
+    motion-bg {
+        display: none;
+    }
+}
+
 #header.expanded nav {
   position: fixed;
   top: 70px;
